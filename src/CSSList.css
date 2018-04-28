@@ -1,0 +1,99 @@
+@font-face {
+    font-family: Oswald;
+    src: url(Oswald-Regular.ttf);
+}
+.root{
+    -fx-background-color: #474747;
+    /*-fx-background-image: url('sample/Facebook.png');*/
+}
+
+.list-cell:empty{
+    -fx-background-color: #ffffff;
+}
+
+.list-cell:odd{
+    -fx-background-color: #ffffff;
+}
+
+.list-cell:even{
+    -fx-background-color: #ededed;
+
+}
+
+.list-cell:selected{
+    -fx-background-color: #59dffc;
+    -fx-text-fill: #383838;
+}
+
+.text-field {
+    -fx-background-color: #c8c8c8;
+    -fx-font-family: Oswald;
+}
+
+.list-view{
+    -fx-background-insets:0;
+    -fx-padding:0;
+    -fx-font-family: Oswald;
+}
+
+.list-view {
+    -fx-font-family: Oswald;
+}
+
+
+
+.table-row-cell:empty {
+    -fx-background-color: #ffffff;
+    -fx-text-fill: #59dffc;
+}
+
+.bWeights{
+    -fx-background-color: #59dffc;
+    -fx-font-family: Oswald;
+    -fx-font-size: 14;
+    -fx-background-radius: 0,0,0;
+}
+
+.bFat{
+    -fx-background-color: #59dffc;
+    -fx-font-family: Oswald;
+    -fx-font-size: 14;
+    -fx-background-radius: 0,0,0;
+}
+
+.button {
+    -fx-background-color: #59dffc;
+    -fx-font-family: Oswald;
+}
+
+.chart{
+    -fx-background-color: #3f3f3f;
+    -fx-font-family: Oswald;
+    -fx-text-fill: #59dffc;
+    -fx-stroke: #59dffc;
+
+}
+
+.chart-legend{
+    -fx-font-family: Oswald;
+    -fx-background-color: transparent;
+}
+
+.label{
+    -fx-font-family: Oswald;
+    -fx-font-size: 14;
+    -fx-background-color: #59dffc;
+}
+
+.mondayExcerciseLabel, .excerciseLabel{
+    -fx-font-family: Oswald;
+    -fx-font-size: 14;
+    -fx-text-fill: #59dffc;
+    -fx-background-color: transparent;
+
+}
+
+
+
+/* Start of styling for specific elements on strength page */
+

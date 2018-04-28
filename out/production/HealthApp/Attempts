@@ -1,0 +1,21 @@
+ First attempt to restrict the type of data the user can enter.
+
+        if (abdomen.getText().equals("") || abdomen.getText().matches("\\D") || abdomen.getText().matches("(\\d+).(\\d+)")
+            || abdomen.getText().matches(".(\\d+)") || abdomen.getText().matches("(\\d+).") || abdomen.getText().matches("(\\D+).(\\D+)")
+            || abdomen.getText().matches(".(\\D+)") || abdomen.getText().matches("(\\D+).") || abdomen.getText().matches("(\\d+).(\\D+)")
+            || abdomen.getText().matches("(\\D+).(\\d+)") || abdomen.getText().matches("(\\d+).") || abdomen.getText().matches(".(\\d+)")) {
+
+            Alert notNumber = new Alert(Alert.AlertType.INFORMATION);
+            notNumber.setTitle("Error");
+            notNumber.setContentText("Enter a Number without a decimal point, or units");
+            notNumber.setHeaderText("Error");
+            notNumber.showAndWait();
+            abdomen.clear();
+        }else {
+            BFP.add(Integer.parseInt(abdomen.getText()));
+            int point = BFP.get(0);
+            data.getData().add(new XYChart.Data(monthString, Integer.parseInt(abdomen.getText())));
+            count = 1 + count;
+            abdomen.clear();
+            }
+        }
